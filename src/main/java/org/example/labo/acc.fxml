@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="807.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.labo.AccController">
+    <children>
+        <Button fx:id="btn1" layoutX="34.0" layoutY="119.0" mnemonicParsing="false" onAction="#clic1" prefHeight="36.0" prefWidth="154.0" text="Voir Cours" textFill="#233a78">
+            <font>
+                <Font name="Algerian" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutY="-2.0" prefHeight="61.0" prefWidth="711.0" style="-fx-background-color: #233a78;" text="   LA TERRE PLANETE DU SYSTEME SOLAIRE" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="Algerian" size="36.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="244.0" fitWidth="282.0" layoutX="285.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@stem.PNG" />
+            </image>
+        </ImageView>
+        <Button fx:id="btn11" layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#clice1" prefHeight="36.0" prefWidth="154.0" text="EXPERIENCES" textFill="#233a78">
+            <font>
+                <Font name="Algerian" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn21" layoutX="34.0" layoutY="234.0" mnemonicParsing="false" onAction="#clicexo1" prefHeight="36.0" prefWidth="154.0" text="EXERCICES" textFill="#233a78">
+            <font>
+                <Font name="Algerian" size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="back1" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#back1" style="-fx-background-color: #2b6cb1;" text="&lt;--" textFill="#f4f4f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

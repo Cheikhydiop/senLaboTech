@@ -1,0 +1,54 @@
+/* styles.css */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f0f2f5;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-text-fill: #2c3e50;
+}
+
+.description {
+    -fx-font-size: 16px;
+    -fx-padding: 15px;
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.button:disabled {
+    -fx-opacity: 0.7;
+}
+
+.quiz-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-text-fill: #2c3e50;
+}
+
+.quiz-question {
+    -fx-font-size: 18px;
+    -fx-padding: 15px;
+    -fx-wrap-text: true;
+}
+
+.alert {
+    -fx-background-color: white;
+}

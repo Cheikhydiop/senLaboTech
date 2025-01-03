@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.labo.ChimieViewController">
+    <children>
+        <AnchorPane prefHeight="743.0" prefWidth="1366.0">
+            <children>
+                <!-- Panneau Gauche -->
+                <AnchorPane layoutY="-1.0" prefHeight="751.0" prefWidth="668.0"
+                            style="-fx-background-color: linear-gradient(to bottom, #1a1a1a, #000000);">
+                    <children>
+                        <ImageView fx:id="studentImage" fitHeight="653.0" fitWidth="445.0"
+                                   layoutX="116.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/eleve-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="logoImage" fitHeight="89.0" fitWidth="134.0"
+                                   layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/log.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+
+                <!-- Panneau Droit -->
+                <AnchorPane layoutX="667.0" layoutY="-1.0" prefHeight="751.0" prefWidth="699.0"
+                            style="-fx-background-color: #1a1a1a; -fx-background-radius: 15px;">
+                    <children>
+                        <!-- Boutons de Navigation -->
+                        <Button fx:id="homeButton" layoutX="182.0" layoutY="23.0" onAction="#onActionHome"
+                                prefHeight="62.0" prefWidth="219.0"
+                                style="-fx-background-color: #FFD700; -fx-background-radius: 30;" text="HOME">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+
+                        <Button fx:id="logoutButton" layoutX="466.0" layoutY="23.0" onAction="#onActionLogout"
+                                prefHeight="62.0" prefWidth="201.0"
+                                style="-fx-background-color: transparent; -fx-border-color: #FFD700; -fx-border-radius: 30; -fx-border-width: 2;"
+                                text="DECONNEXION" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+
+                        <!-- Section Cours -->
+                        <Button layoutX="30.0" layoutY="228.0" styleClass="menu-button"
+                                prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15;" />
+                        <Label fx:id="courseLabel" layoutX="141.0" layoutY="242.0" onMouseClicked="#onActionCourse"
+                               prefHeight="74.0" prefWidth="505.0" text="COURS HYDROCARBURE" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Section TP -->
+                        <Button layoutX="30.0" layoutY="396.0" styleClass="menu-button"
+                                prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15;" />
+                        <Label fx:id="tpLabel" layoutX="148.0" layoutY="403.0" onMouseClicked="#onActionTP"
+                               prefHeight="89.0" prefWidth="519.0" text="TRAVAUX PRATIQUES" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Section Modèle 3D -->
+                        <Button layoutX="30.0" layoutY="554.0" styleClass="menu-button"
+                                prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15;" />
+                        <Label fx:id="modelLabel" layoutX="148.0" layoutY="561.0" onMouseClicked="#onAction3DModel"
+                               prefHeight="89.0" prefWidth="519.0" text="MODÈLE 3D" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Icônes -->
+                        <ImageView fitHeight="89.0" fitWidth="110.0" layoutX="40.0" layoutY="237.0">
+                            <image>
+                                <Image url="@assets/images.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="40.0" layoutY="397.0">
+                            <image>
+                                <Image url="@assets/logotech.jpeg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="40.0" layoutY="555.0">
+                            <image>
+                                <Image url="@assets/logotech.jpeg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
